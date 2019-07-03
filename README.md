@@ -1,27 +1,14 @@
-# Ang8
+# ViewChild static flag
+https://angular.io/api/core/ViewChild
+https://stackoverflow.com/questions/56359504/how-should-i-use-the-new-static-option-for-viewchild-in-angular-8
+https://angular.io/guide/static-query-migration
+https://github.com/angular/angular/blob/master/CHANGELOG.md
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+> core: In Angular version 8, it's required that all @ViewChild and @ContentChild queries have a 'static' flag specifying whether the query is 'static' or 'dynamic'. The compiler previously sorted queries automatically, but in 8.0 developers are required to explicitly specify which behavior is wanted. This is a temporary requirement as part of a migration; see static query migration guide for more details.
+> 
+> @ViewChildren and @ContentChildren queries are always dynamic, and so are unaffected.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

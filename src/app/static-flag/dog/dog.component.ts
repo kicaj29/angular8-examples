@@ -15,7 +15,7 @@ export class DogComponent implements OnInit, AfterViewInit {
 
   // static flag works in the scope of particular component,
   // it means that if parent component is rendered conditionally (ngIf on app-dog)
-  // it is ok to use static: true inside of this component (app-dog)g
+  // it is ok to use static: true inside of this component (app-dog)
   @ViewChild(SmallDogComponent, {read: SmallDogComponent, static: true}) SmallDog: SmallDogComponent;
 
   constructor() { }

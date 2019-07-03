@@ -23,7 +23,8 @@ export class StaticFlagComponent implements OnInit, AfterViewInit {
 
   // static: true - use when the component is always rendered, then 'dog' is available in ngOnInit, ngAfterViewInit
   // static: false - use when the component rendering depends on some conditions (like ngIf), then 'dog' is available in ngAfterViewInit
-  // NOTE: if we use static: true and the component rendering depends on some conditions then 'dog' is not available at all!!!
+  // NOTE1: if we use static: true and the component rendering depends on some conditions then 'dog' is not available at all!!!
+  // NOTE2: if we use static: false and the component is always rendered, then 'dog' is available in ngAfterViewInit!!!
   @ViewChild(DogComponent, {read: DogComponent, static: false}) dog: DogComponent;
 
 

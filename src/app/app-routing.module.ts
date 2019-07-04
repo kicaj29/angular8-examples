@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { StaticFlagComponent } from './static-flag/static-flag.component';
-
 
 const routes: Routes = [
   {
@@ -11,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'static-flag',
-    component: StaticFlagComponent
+    loadChildren: () => import('./static-flag/static-flag.module').then(m => m.StaticFlagModule)
   }
 ];
 

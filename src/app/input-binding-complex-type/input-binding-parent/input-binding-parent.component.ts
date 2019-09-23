@@ -41,9 +41,13 @@ export class InputBindingParentComponent implements OnInit {
 
   addByParent() {
     console.log('addByParent');
+
+    // if we add an element to existing array @input binding is not triggered and the new element is not rendered
     this.viewModel.selectedItems[0].selectedRowsIds.push(Date.now().toString());
-    this._cd.detectChanges();
-    // this.viewModel.selectedItems[0].selectedRowsIds = [];
+    // this._cd.detectChanges();
+
+
+    // we have to create new instance of selectedItems to trigger @input binding (setter)
     //this.viewModel.selectedItems = [];
     //this.viewModel.selectedItems.push(new ItemSelectorSelectedRowsModel(1, '1', []));
     //this.viewModel.selectedItems[0].selectedRowsIds.push(Date.now().toString());

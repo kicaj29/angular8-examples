@@ -8,6 +8,12 @@ https://github.com/angular/angular/blob/master/CHANGELOG.md
 > 
 > @ViewChildren and @ContentChildren queries are always dynamic, and so are unaffected.
 
+# @input binding for complex types
+This example presents problem with binding via @input complex data types.
+It was also reported as a bug [here](https://github.com/angular/angular/issues/11704).
+
+When an input property of component is array or complex object, it's changes do not detected until reference is same. And we have no any way to tell component, that value is updated, besides to change whole object.
+
 
 
 

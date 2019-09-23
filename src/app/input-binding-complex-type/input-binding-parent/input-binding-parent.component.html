@@ -1,0 +1,6 @@
+<p>input-binding-parent works!</p>
+<app-input-binding-child
+  [itemSelectorSelectedRows]="viewModel.selectedItems"
+  (selectionConfirmed)="onItemSelectorConfirm($event)">
+</app-input-binding-child>
+<button (click)="addByParent()">add by parent</button>

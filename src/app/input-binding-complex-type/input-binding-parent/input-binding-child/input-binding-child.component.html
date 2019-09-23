@@ -1,0 +1,9 @@
+<p>input-binding-child works!</p>
+<ul *ngIf="selectedIds">
+  <li *ngFor="let id of selectedIds; let i = index">{{id}}
+    <button (click)="remove(index)">remove me</button>
+  </li>
+</ul>
+<button (click)="addByChild()">Add by child</button>
+<button (click)="closeDialog()">Close dialog</button>
+

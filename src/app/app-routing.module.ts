@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'static-flag',
     loadChildren: () => import('./static-flag/static-flag.module').then(m => m.StaticFlagModule)
+  },
+  {
+    path: 'input-binding-complex-type',
+    loadChildren: () => import('./input-binding-complex-type/input-binding-complex-type.module').then(m => m.InputBindingComplexTypeModule)
   }
 ];
 
